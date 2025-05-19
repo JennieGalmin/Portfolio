@@ -19,6 +19,7 @@ Den färdiga portfolion kommer att användas i mitt jobbsökande som frontendutv
 
 # 📸 Screenshots:
 Det här är min första design i figma som visar två olika design val, ett mörkt läge och ett ljust läge. Jag har valt att skapa mobilsidan först för att sedan designa webbsidan.
+
 <img width="477" alt="Figma" src="https://github.com/user-attachments/assets/151a44ab-2091-4dd3-9896-96f08b8ae8d6" />
 
 
