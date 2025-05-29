@@ -10,6 +10,7 @@ font-style = Jacques Francois
 body {
     background-color: #333232ff;
     font-family: 'Jacques Francois', serif;
+    color: #FFFFFF;
 }
 
 header {
@@ -19,10 +20,21 @@ header {
 
 .logo_pic {
    clip-path: circle();
+   margin-left: 50px;
+}
+
+.menu a {
+    margin-right: 60px;
 }
 
 .container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.mainContainer p {
+    width: 500px;
 }
