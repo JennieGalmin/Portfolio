@@ -27,7 +27,7 @@ header {
     background-color: #333232ff;
     height: 100vh;
     width: 100%;
-    max-width: 450px;
+    max-width: 300px;
     position: fixed;
     top: 0;
     right: -450px;
@@ -46,6 +46,7 @@ header {
     width: 50px;
     margin-left: auto;
     position: relative;
+    margin-right: 60px;
 }
 .hamburgerMenu span{
     height: 5px;
@@ -73,19 +74,30 @@ header {
 }
 .hamburgerMenu.active span:nth-child(3){
     top: 50%;
-    transform: translate(-50%, 50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
 }
+
 nav {
     padding: 1rem;
     display: flex;
-    background-color: #ffb400ff;
+    background-color: #333232ff;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ffb400ff;
 }
 .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    justify-content: space-between;
+}
+.container h1{
+    justify-content: center;
+    background-color: aqua;
 }
 
 .mainContainer p {
