@@ -6,16 +6,24 @@
 --zomp: #639a88ff;
 font-style = Jacques Francois
 */
+* {
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: #333232;
+    --secondary-color: #FFFFFF;
+    --accent-color: #ffb400;
+}
 
 body {
-    background-color: #333232ff;
-    font-family: 'Jacques Francois', serif;
-    color: #FFFFFF;
+    background-color: var(--primary-color);
+    font-family: system-ui;
+    color: var(--secondary-color);
 }
 
 header {
-    background-color: #333232ff;
-    color: #ffb400ff;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .logo_pic {
@@ -24,7 +32,7 @@ header {
 }
 
 .offscreenMenu {
-    background-color: #333232ff;
+    background-color: var(--primary-color);
     height: 100vh;
     width: 100%;
     max-width: 300px;
@@ -80,25 +88,22 @@ header {
 nav {
     padding: 1rem;
     display: flex;
-    background-color: #333232ff;
+    background-color: var(--primary-color);
 }
 nav ul{
     list-style: none;
 }
 nav ul li a {
     text-decoration: none;
-    color: #ffb400ff;
+    color: var(--accent-color);
 }
-.container {
+#container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
-.container h1{
-    justify-content: center;
-    background-color: aqua;
-}
+
 
 .mainContainer p {
     width: 500px;
