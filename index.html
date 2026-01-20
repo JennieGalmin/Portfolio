@@ -10,9 +10,7 @@
 <body>
     <header>
         <div id="container">
-        <img class="logo_pic" src="bilder/selfieIBil.jpg" width="80px" height="100px" alt="">
-        <h1>Jennies Portfolio</h1>
-        <div class="offscreenMenu">
+            <div id="offscreenMenu">
             <nav>
             <ul>
                 <li><a href="omMig.html">Om mig</a></li>
@@ -21,40 +19,35 @@
             </ul>
             </nav>
         </div>
-        <div class="hamburgerMenu">
+         <div id="hamburgerMenu">
             <span></span>
             <span></span>
             <span></span>
         </div>
+            <div id="heroPic">
+        <h1>JENNIES PORTFOLIO</h1>
+        <img class="logo_pic" src="bilder/selfieIBil.jpg" width="80px" height="100px" alt="">
+            </div>
     </header>
     <main>
-        <div class="mainContainer">
-        <p>
-            Projekten som jag visar upp i min portfolio är <strong>mina första projekt 
-            utan hjälp av AI.</strong>  
-            De allra flesta projekt jag har på GitHub är med AIs hjälp. 
-            När jag började <strong>min utvecklarkarriär på EC-utbildning </strong>så 
-            var AI ganska nytt och det kändes som att det kunde vara bra att veta hur man använder AI. 
-            Eftersom jag studerade hemifrån kunde jag få mycket hjälp av den och jag var 
-            mammaledig samtidigt så det var ett snabbare sätt att lära mig utveckling och också 
-            att få ihop projekten i tid. </p>
-        <p>
-            Jag tror på att AI kan hjälpa oss mycket i vårt jobb som utvecklare, 
-            men jag tror också på att man måste öva och <strong>lära sig utan AI</strong> för att få 
-            en bättre förståelse för hur koden är uppbyggd. 
-            Jag har lärt mig att <strong>jag lär mig fortare utan AI</strong> för att jag kommer ihåg 
-            mina misstag bättre. Jag tror att som ny utvecklare kan det bli förvirrande 
-            och man fastnar i en loop där man inte vet hur man ska ta sig ur problemet än. 
-        </p>
-        <p>
-            Just nu har jag bara två projekt att dela med mig av men jag vet att det kommer 
-            bli mer med tidens gång, portfolion som du är i just nu, är med hjälp av Jad Joubrans
-            HTML och CSS kurs där jag lär mig mycket om <strong>semantik och tillgänglighet.</strong> 
-        </p>
-        </div>
+       <div class="divider"></div>
+       <h1>My latest work (pil)</h1>
+
+       <div id="projects">
+        <article class="project project-tictactoe">
+        <!--<img src="bilder/tictactoe.PNG" alt="tictactoe" width="450" height="400">-->
+            <video width="450" height="400" controls>
+                <source src="videos/tic-tac-toe.mp4" type="video/mp4">
+            </video>
+        </article>
+        
+        <article class="project project-todo"></article>
+       </div>
+
+       <div class="divider"></div>
     </main>
     <footer>
-       
+      
     </footer>
     <script src="script.js"></script>
 </body>

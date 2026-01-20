@@ -1,5 +1,5 @@
-const hamMenu = document.querySelector(".hamburgerMenu");
-const offscreenMenu = document.querySelector(".offscreenMenu");
+const hamMenu = document.querySelector("#hamburgerMenu");
+const offscreenMenu = document.querySelector("#offscreenMenu");
 
 hamMenu.addEventListener("click", () => {
     hamMenu.classList.toggle("active");

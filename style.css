@@ -4,7 +4,7 @@
 --selective-yellow: #ffb400ff;
 --rosy-brown: #c99da3ff;
 --zomp: #639a88ff;
-font-style = Jacques Francois
+font-family = Jacques Francois
 */
 * {
     box-sizing: border-box;
@@ -13,12 +13,14 @@ font-style = Jacques Francois
     --primary-color: #333232;
     --secondary-color: #FFFFFF;
     --accent-color: #ffb400;
+    --selective-beige: rgba(219, 204, 170, 1);
 }
 
 body {
     background-color: var(--primary-color);
     font-family: system-ui;
     color: var(--secondary-color);
+    text-align: center;
 }
 
 header {
@@ -26,12 +28,19 @@ header {
     color: var(--accent-color);
 }
 
-.logo_pic {
+h1 {
+    font-size: 40px;
+    font-family: 'Jacques Francois';
+    letter-spacing: 0.1rem;
+    font-weight: 400;
+}
+
+#logo_pic {
    clip-path: circle();
    margin-left: 50px;
 }
 
-.offscreenMenu {
+#offscreenMenu {
     background-color: var(--primary-color);
     height: 100vh;
     width: 100%;
@@ -46,20 +55,23 @@ header {
     font-size: 3rem;
     transition: .3s ease;
 }
-.offscreenMenu.active{
+#offscreenMenu.active{
     right: 0;
 }
-.hamburgerMenu{
+
+#hamburgerMenu{
     height: 50px;
     width: 50px;
     margin-left: auto;
     position: relative;
     margin-right: 60px;
 }
-.hamburgerMenu span{
+
+
+#hamburgerMenu span{
     height: 5px;
     width: 100%;
-    background-color: #ffb400ff;
+    background-color: var(--accent-color);
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -67,20 +79,20 @@ header {
     transform: translate(-50%, -50%);
     transition: .3s ease;
 }
-.hamburgerMenu span:nth-child(1){
+#hamburgerMenu span:nth-child(1){
     top: 25%;
 }
-.hamburgerMenu span:nth-child(3){
+#hamburgerMenu span:nth-child(3){
     top: 75%;
 }
-.hamburgerMenu.active span:nth-child(1){
+#hamburgerMenu.active span:nth-child(1){
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
 }
-.hamburgerMenu.active span:nth-child(2){
+#hamburgerMenu.active span:nth-child(2){
     opacity: 0;
 }
-.hamburgerMenu.active span:nth-child(3){
+#hamburgerMenu.active span:nth-child(3){
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
 }
@@ -97,14 +109,36 @@ nav ul li a {
     text-decoration: none;
     color: var(--accent-color);
 }
-#container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+.divider {
+    width: 100%;
+    background-color: var(--secondary-color);
+    height: 1px;
+    margin-top: 10rem;
 }
 
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    padding:2rem;
+}
+.project {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+}
 
-.mainContainer p {
-    width: 500px;
+.project-tictactoe{
+    width: 70rem;
+    height: 30rem;
+    background-color: var(--selective-beige);
+    margin: 10rem;
+}
+
+.project-todo {
+    width: 70rem;
+    height: 30rem;
+    background-color: var(--selective-beige);
 }
